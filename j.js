@@ -20,6 +20,15 @@
   }
  }
  
- window.onload = function() {
-  highlightRows();
- }
+ // window.onload = function() {
+ //  highlightRows();
+ // }
+ $(document).ready(function (argument) {
+	$("tr").hover(function () {
+    	$(this).addClass("highlight");
+  		},
+  		function () {
+    		$(this).removeClass("highlight");
+  			}
+		);
+})
